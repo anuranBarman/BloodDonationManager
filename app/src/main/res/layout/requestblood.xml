@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Blood Quantities"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:layout_marginTop="5dp" />
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp">
+            <TableRow>
+                <TextView android:text="Blood Type" android:layout_column="1" android:padding="10dp" android:background="@drawable/profile_tv_bg" android:textSize="18dp"/>
+                <TextView android:text="Available Quantity" android:textSize="18dp" android:layout_column="2" android:padding="10dp" android:background="@drawable/profile_tv_bg"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="A+" android:layout_column="1" android:padding="10dp" android:background="@drawable/profile_tv_bg" android:textSize="18dp"/>
+                <TextView android:text="Available Quantity" android:id="@+id/tvApos" android:textSize="18dp" android:layout_column="2" android:padding="10dp" android:background="@drawable/profile_tv_bg"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="A-" android:layout_column="1" android:padding="10dp" android:background="@drawable/profile_tv_bg" android:textSize="18dp"/>
+                <TextView android:text="Available Quantity" android:id="@+id/tvAneg" android:textSize="18dp" android:layout_column="2" android:padding="10dp" android:background="@drawable/profile_tv_bg"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="B+" android:layout_column="1" android:padding="10dp" android:background="@drawable/profile_tv_bg" android:textSize="18dp"/>
+                <TextView android:text="Available Quantity" android:id="@+id/tvBpos" android:textSize="18dp" android:layout_column="2" android:padding="10dp" android:background="@drawable/profile_tv_bg"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="B-" android:layout_column="1" android:padding="10dp" android:background="@drawable/profile_tv_bg" android:textSize="18dp"/>
+                <TextView android:text="Available Quantity" android:id="@+id/tvBneg" android:textSize="18dp" android:layout_column="2" android:padding="10dp" android:background="@drawable/profile_tv_bg"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="AB+" android:layout_column="1" android:padding="10dp" android:background="@drawable/profile_tv_bg" android:textSize="18dp"/>
+                <TextView android:text="Available Quantity" android:id="@+id/tvABpos" android:textSize="18dp" android:layout_column="2" android:padding="10dp" android:background="@drawable/profile_tv_bg"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="AB-" android:layout_column="1" android:padding="10dp" android:background="@drawable/profile_tv_bg" android:textSize="18dp"/>
+                <TextView android:text="Available Quantity" android:id="@+id/tvABneg" android:textSize="18dp" android:layout_column="2" android:padding="10dp" android:background="@drawable/profile_tv_bg"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="O+" android:layout_column="1" android:padding="10dp" android:background="@drawable/profile_tv_bg" android:textSize="18dp"/>
+                <TextView android:text="Available Quantity" android:id="@+id/tvOpos" android:textSize="18dp" android:layout_column="2" android:padding="10dp" android:background="@drawable/profile_tv_bg"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="O-" android:layout_column="1" android:padding="10dp" android:background="@drawable/profile_tv_bg" android:textSize="18dp"/>
+                <TextView android:text="Available Quantity" android:id="@+id/tvOneg" android:textSize="18dp" android:layout_column="2" android:padding="10dp" android:background="@drawable/profile_tv_bg"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/type_title"
+            android:layout_marginRight="10dp"
+            android:id="@+id/typespin"></Spinner>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/qty_title"
+            android:layout_marginRight="10dp"
+            android:id="@+id/qtyspin"></Spinner>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/btnRequest"/>
+    </LinearLayout>
+</LinearLayout>

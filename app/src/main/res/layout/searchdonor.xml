@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search Donor"
+            android:textSize="22dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Username of Donor"
+            android:id="@+id/searchDonorUsername"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btnSearch"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Name : Need Refresh"
+                android:background="@drawable/profile_tv_bg"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:id="@+id/tvSearchName"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="User Name : Need Refresh"
+                android:background="@drawable/profile_tv_bg"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvSearchusername"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Email : Need Refresh"
+                android:background="@drawable/profile_tv_bg"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvSearchemail"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Mobile : Need Refresh"
+                android:background="@drawable/profile_tv_bg"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvSearchmobile"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Address : Need Refresh"
+                android:background="@drawable/profile_tv_bg"
+                android:padding="10dp"
+                android:ellipsize="end"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvSearchaddress"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Blood Group : Need Refresh"
+                android:background="@drawable/profile_tv_bg"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvSearchblood"/>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

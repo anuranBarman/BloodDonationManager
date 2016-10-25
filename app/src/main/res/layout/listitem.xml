@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="@drawable/profile_tv_bg">
+        <TableRow >
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:background="@color/colorPrimary"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:id="@+id/lvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/profile_tv_bg"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:background="@color/colorPrimary"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lvUsername"
+                android:padding="5dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/profile_tv_bg"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:background="@color/colorPrimary"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lvUseremail"
+                android:padding="5dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/profile_tv_bg"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                android:background="@color/colorPrimary"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lvUsermob"
+                android:padding="5dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/profile_tv_bg"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:background="@color/colorPrimary"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lvUserlocation"
+                android:paddingRight="20dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:maxLines="10"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/profile_tv_bg"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood Group"
+                android:background="@color/colorPrimary"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lvUserblood"
+                android:layout_marginRight="15dp"
+                android:padding="5dp"
+                android:background="@drawable/profile_tv_bg"/>
+        </TableRow>
+    </TableLayout>
+
+
+
+
+
+</LinearLayout>
